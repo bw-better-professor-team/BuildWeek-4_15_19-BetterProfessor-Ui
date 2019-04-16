@@ -75,15 +75,21 @@ body {
 }
 
 .top-column h1 {
-    font-size: 5.5rem;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .top-column p {
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
 }
 .logo-img {
-    width : 50%;
+    width : 30%;
     height: auto;
+
+    @media @phone {
+        width: 50%;
+      }
 }
 
 .login-button {
@@ -97,6 +103,10 @@ body {
     text-align      : center;
     text-decoration : none;
     font-size: 2rem;
+
+    @media @phone {
+       width: 40%;
+      }
 }
 
 .central-column {
@@ -104,11 +114,11 @@ body {
 }
 
 .central-column h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .central-column p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 
@@ -119,6 +129,13 @@ body {
     justify-content : space-around;
     align-items     : center;
     height          : 70px;
+
+
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+       }
 }
 
 .central-column-nav .nav-button {
@@ -132,22 +149,40 @@ body {
     text-decoration : none;
     padding         : 10px 0px;
     font-size: 2rem;
+
+    @media @phone {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+       }
 }
 
 .feature-section {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .feature-section-odd {
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .feature-picture {
-    display: none;
+    width: 20%;
+    height: 20%;
+    
+
+    @media @phone {
+        display: none;
+       }
 }
 
 .feature-text {
     width: 48%;
+
+    @media @phone {
+        width: 100%;
+       }
 }
 
 footer {
