@@ -49,3 +49,48 @@ body {
 .container {
   width: 800px
 }
+
+.top-column {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.logo-img {
+  width: 50%;
+  height: auto;
+}
+
+.login-button {
+  width: 20%;
+  height: 40px;
+  background-color:orangered;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.central-column {
+  padding-top: 50px;
+}
+.central-column-nav {
+  background-color: lightgrey;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+}
+
+.feature-section {
+  display:flex;
+}
+.feature-picture {
+  display:none;
+  /* max-width:50%; */
+  /* max-height:50%; */
+  /* display:flex; */
+}
+
+.feature-text {
+  width: 50%;
+}
