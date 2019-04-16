@@ -53,24 +53,26 @@ body {
     justify-content : none;
     align-items     : center;
     flex-direction  : column;
-    background-color: white;
-    color           : #333;
+    background-color: @better-prof-color-background;
+    color           : @better-prof-text-color;
     font-family     : 'PT Sans', sans-serif;
 }
 
 .container {
     max-width: 95%;
-    width: 800px;
+    width    : 800px;
+
+
+    @media @tablet {
+        width : 90%;
+        margin: 0 5%;
+    }
 
     @media @phone {
         width : 90%;
         margin: 0 5%;
     }
 
-    @media @tablet {
-        width : 90%;
-        margin: 0 5%;
-    }
 }
 
 
@@ -94,30 +96,38 @@ body {
     width : 30%;
     height: auto;
 
-    @media @phone {
-        width: 50%;
-    }
 
     @media @tablet {
         width: 40%;
     }
+
+    @media @phone {
+        width: 50%;
+    }
+
 }
 
 .login-button {
     width           : 20%;
     height          : 40px;
     padding         : 10px 0px;
-    background-color: orangered;
-    color           : white;
+    background-color: @better-prof-login-background;
+    color           : @better-prof-login-text;
     border-radius   : 10px;
     border          : none;
     text-align      : center;
     text-decoration : none;
     font-size       : 2rem;
 
+
+    @media @tablet {
+        width: 40%;
+    }
+
     @media @phone {
         width: 40%;
     }
+
 }
 
 .central-column {
@@ -134,12 +144,11 @@ body {
 
 
 .central-column-nav {
-    background-color: lightgrey;
-    border-radius   : 10px;
-    display         : flex;
-    justify-content : space-around;
-    align-items     : center;
-    height          : 70px;
+    border-radius  : 10px;
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    height         : 70px;
 
 
     @media @phone {
@@ -152,8 +161,8 @@ body {
 .central-column-nav .nav-button {
     width           : 20%;
     height          : 40px;
-    background-color: white;
-    color           : #333;
+    background-color: @better-prof-nav-background;
+    color           : @better-prof-text-color;
     border-radius   : 10px;
     border          : none;
     text-align      : center;
@@ -161,11 +170,19 @@ body {
     padding         : 10px 0px;
     font-size       : 2rem;
 
+
+    @media @tablet {
+        width         : 30%;
+        display       : flex;
+        flex-direction: column;
+    }
+
     @media @phone {
         width         : 40%;
         display       : flex;
         flex-direction: column;
     }
+
 }
 
 .feature-section {
@@ -183,14 +200,16 @@ body {
     height: 20%;
 
 
+
+    @media @tablet {
+        width : 30%;
+        height: 30%;
+    }
+    
     @media @phone {
         display: none;
     }
 
-    @media @tablet {
-        width: 30%;
-        height: 30%;
-    }
 }
 
 .feature-text {
@@ -202,5 +221,7 @@ body {
 }
 
 footer {
-    padding: 30px 0px;
+    padding         : 10px 5px;
+    background-color:@better-prof-nav-background;
+    border-radius: 10px;
 }
