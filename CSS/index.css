@@ -134,6 +134,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 70px;
+  background-color: darkgrey;
 }
 @media (max-width: 500px) {
   .central-column-nav {
@@ -200,7 +201,7 @@ body {
   }
 }
 footer {
-  padding: 10px 5px;
+  padding: 10px 10px;
   background-color: white;
   border-radius: 10px;
 }
