@@ -210,8 +210,12 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.team-member-bio {
-  width: 60%;
+.active-bio {
+  display: flex;
+  flex-direction: column;
+}
+.inactive-bio {
+  display: none;
 }
 .team-member-button {
   width: 100%;
@@ -229,6 +233,7 @@ footer {
 .active-button {
   background-color: orangered;
   color: white;
+  border: none;
 }
 .inactive-button {
   background-color: white;
