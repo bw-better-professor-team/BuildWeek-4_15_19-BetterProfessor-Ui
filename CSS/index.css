@@ -226,11 +226,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.button-active {
+.active-button {
   background-color: orangered;
   color: white;
 }
-.button-inactive {
+.inactive-button {
   background-color: white;
   color: orangered;
   border: 1px solid orangered;
