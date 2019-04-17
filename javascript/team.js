@@ -2,6 +2,7 @@ class TeamMemberButton {
   constructor(button){
     // assign this.tabElement to the tabElement DOM reference
     this.button = button;
+    // debugger;
     // console.log("this.button");
     // console.log(this.button);
 
@@ -43,8 +44,8 @@ class TeamMemberButton {
 
 let teamMemberButtons = document.querySelectorAll('.team-member-button');
 
-console.log("start at bottom of page");
-console.log(teamMemberButtons);
+// console.log("start at bottom of page");
+// console.log(teamMemberButtons);
 
 teamMemberButtons.forEach(function(button){
   return new TeamMemberButton(button);
