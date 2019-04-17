@@ -1,19 +1,29 @@
-class TabLink {
-  constructor(tabElement){
+class TeamMemberButton {
+  constructor(button){
     // assign this.tabElement to the tabElement DOM reference
-    this.tabElement = tabElement;
+    this.button = button;
+    console.log("this.button");
+    console.log(this.button);
 
     // Get the `data-tab` value from this.tabElement and store it here
-    this.tabData = this.tabElement.dataset.tab; 
+    // this.tabData = this.tabElement.dataset.tab; 
+    this.buttonData = this.button.dataset.lastName;
+    console.log("this.buttonData");
+    console.log(this.buttonData)
 
     // We need to find out if a user clicked 'all' cards or a specific category.  Follow the instructions below to accomplish this task:    
-    if(this.tabData === "all"){
+    // if(this.tabData === "all"){
       // If `all` is true, select all cards regardless of their data attribute values
-      this.cards = document.querySelectorAll('.card');
-    } else {
+      // this.cards = document.querySelectorAll('.card');
+    // } else {
       // else if `all` is false, only select the cards with matching this.tabData values
-      this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
-    }
+    //   this.cards = document.querySelectorAll(`.card[data-tab="${this.tabData}"]`);
+    // }
+
+    this.lastNameBio = document.querySelector(`.team-member-bio[data-tab="${this.buttonData}"]`)
+    console.log("this.lastNameBio");
+    console.log(this.lastNameBio);
+
     
      // Map over the newly converted NodeList we just created in our if statement above. Convert each this.cards element into a new instance of the TabCard class. Pass in a card object to the TabCard class. 
     this.cards = Array.from(this.cards).map(card => new TabCard(card));
@@ -58,6 +68,7 @@ class TabCard {
 
 }
 
+
 /* START HERE:
 
 - Select all classes named ".tab" and assign that value to the tabs variable
@@ -66,9 +77,16 @@ class TabCard {
 
 - In your .forEach() method's callback function, return a new instance of TabLink and pass in each tab as a parameter
 
-*/
-let tabs = document.querySelectorAll('.tab');
+// */
 
-tabs.forEach(function(tab){
-  return new TabLink(tab);
+// let tabs = document.querySelectorAll('.tab');
+
+// tabs.forEach(function(tab){
+//   return new TabLink(tab);
+// });
+
+let teamMemberButtons = document.querySelectorAll('.team-member');
+
+teamMemberButtons.forEach(function(button){
+  return new TeamMemberButton(button);
 });

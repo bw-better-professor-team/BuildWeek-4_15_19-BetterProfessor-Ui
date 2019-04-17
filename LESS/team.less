@@ -1,0 +1,35 @@
+.team-section {
+    padding-top    : 40px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.team-member-bio {
+    width: 60%;
+}
+
+.team-member-button {
+    width           : 100%;
+    height          : 40px;
+    padding         : 10px 0px;
+    margin          : 10px 0px;
+
+    border-radius   : 10px;
+    border          : 1px solid @better-prof-login-background;
+    text-align      : center;
+    text-decoration : none;
+    font-size       : 2rem;
+    display         : flex;
+    flex-direction  : column;
+}
+
+.button-active {
+    background-color: @better-prof-login-background;
+    color           : @better-prof-login-text;
+}
+
+.button-inactive {
+    background-color: @better-prof-login-text;
+    color           : @better-prof-login-background;
+    border          : 1px solid @better-prof-login-background;
+}
