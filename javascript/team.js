@@ -47,7 +47,14 @@ let teamMemberButtons = document.querySelectorAll('.team-member-button');
 // console.log("start at bottom of page");
 // console.log(teamMemberButtons);
 
-teamMemberButtons.forEach(function(button){
-  return new TeamMemberButton(button);
-});
+// console.log(teamMemberButtons);
+
+teamMemberButtons = Array.from(teamMemberButtons);
+teamMemberButtons = teamMemberButtons.map(button => new TeamMemberButton(button));
+
+// teamMemberButtons.forEach(function(button){
+//   return new TeamMemberButton(button);
+// });
+
+
 

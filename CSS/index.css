@@ -170,6 +170,7 @@ body {
   }
 }
 .feature-section {
+  padding-top: 20px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
