@@ -19,6 +19,8 @@
 
 .team-member-bio {
     align-items: center;
+    display: none;
+
 }
 
 .team-member-bio h3 {
@@ -38,11 +40,6 @@
     width         : 100%;
     display       : flex;
     flex-direction: column;
-}
-
-.inactive-bio {
-    display: none;
-
 }
 
 .team-member-buttons {
@@ -65,8 +62,11 @@
     padding: 10px 0px;
     margin : 10px 0px;
 
+    background-color: @better-prof-login-text;
+    color           : @better-prof-login-background;
+    border          : 1px solid @better-prof-login-background;
+
     border-radius  : 10px;
-    border         : 1px solid @better-prof-login-background;
     text-align     : center;
     text-decoration: none;
     font-size      : 2rem;
@@ -86,10 +86,4 @@
     background-color: @better-prof-login-background;
     color           : @better-prof-login-text;
     border          : none;
-}
-
-.inactive-button {
-    background-color: @better-prof-login-text;
-    color           : @better-prof-login-background;
-    border          : 1px solid @better-prof-login-background;
 }

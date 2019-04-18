@@ -11,17 +11,12 @@ class TeamMemberButton {
     const buttons = document.querySelectorAll('.team-member-button');
 
     buttons.forEach(button => { button.classList.remove('active-button') });
-    buttons.forEach(button => { button.classList.add('inactive-button') });
-
-    this.button.classList.remove('inactive-button');
-    this.button.classList.add('active-button');
+    this.button.classList.toggle('active-button');
 
     const bios = document.querySelectorAll('.team-member-bio');
     bios.forEach(bio => { bio.classList.remove('active-bio') });
-    bios.forEach(bio => { bio.classList.add('inactive-bio') });
 
-    this.lastnameBio.classList.remove('inactive-bio');
-    this.lastnameBio.classList.add('active-bio');
+    this.lastnameBio.classList.toggle('active-bio');
 
   }
 }
