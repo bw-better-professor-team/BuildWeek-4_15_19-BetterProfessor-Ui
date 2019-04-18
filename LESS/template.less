@@ -6,6 +6,8 @@
     border-bottom: 1px solid lightgrey;
 }
 
+// fonts
+
 @font-face {
     font-family: 'PT Sans';
     font-style : italic;
@@ -44,6 +46,7 @@ body {
     padding: 0;
 }
 
+// setting font-size for rem
 html {
     font-size: 62.5%;
 }
@@ -68,10 +71,6 @@ body {
         margin: 0 5%;
     }
 
-    @media @phone {
-        width : 90%;
-        margin: 0 5%;
-    }
 
 }
 
@@ -96,6 +95,8 @@ body {
     width : 30%;
     height: auto;
 
+    // increasing logo width for successive breakpoints
+    // otherwise, logo gets too small
 
     @media @tablet {
         width: 40%;
@@ -120,6 +121,7 @@ body {
     font-size       : 2rem;
 
 
+    // adjusting button width to make breakpoints look better
 
     @media @tablet {
         width: 35%;
@@ -144,7 +146,7 @@ body {
     font-size: 1.5rem;
 }
 
-
+// nav bar in middle of the page
 .central-column-nav {
     border-radius   : 10px;
     display         : flex;
