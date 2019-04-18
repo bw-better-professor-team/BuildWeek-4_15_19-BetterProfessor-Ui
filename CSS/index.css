@@ -207,30 +207,39 @@ footer {
   border-radius: 10px;
 }
 .team-section {
-  padding-top: 40px;
+  padding: 40px 0px;
   display: flex;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   .team-section {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
 }
 .team-bios {
   display: flex;
+  justify-content: center;
+  text-align: center;
 }
-@media (max-width: 800px) {
-  .team-bios {
-    justify-content: center;
-  }
+.team-member-bio {
+  align-items: center;
 }
 .team-member-bio h3 {
   font-size: 2rem;
 }
 .headshot {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .headshot {
+    width: 50%;
+  }
 }
 .active-bio {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -238,17 +247,20 @@ footer {
   display: none;
 }
 .team-member-buttons {
-  width: 100%;
+  padding-left: 40px;
+  width: 40%;
 }
 @media (max-width: 800px) {
   .team-member-buttons {
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 }
 .team-member-button {
-  width: 100%;
+  width: 80%;
   height: 40px;
   padding: 10px 0px;
   margin: 10px 0px;
